@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,7 +54,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
+            Is this Working <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
             Find in-depth information about Next.js features and API.
@@ -85,6 +86,21 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+        <Link 
+          href="/about/"
+          className={styles.card}
+          target="_blank"
+          rel="nooopener noreferrer">
+          
+          <h2 
+            className={inter.className}>
+            About Page <span>&rarr;</span>
+          </h2>
+          <p 
+            className={inter.className}>
+              An about page made for myself.
+          </p>
+        </Link>
       </div>
     </main>
   )
