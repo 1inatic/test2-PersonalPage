@@ -25,7 +25,10 @@ export default function NavBar(){
       
         <div 
             className="flex items-center flex-shrink-0 text-white mr-6 font-semibold text-xl">
+            <Link
+                href="/about">
                 About me 
+            </Link>   
         </div>
         <div className="invisible h-0 lg:visible lg:h-auto">{navItems("")}</div>
         <div 
