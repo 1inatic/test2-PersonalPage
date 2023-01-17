@@ -1,10 +1,12 @@
+'use client'
 import Image from 'next/image'
-import NavBar from "./NavBar"
+import NavBar from "../NavBar"
 import Link from 'next/link'
 export default function MePage(){
     const tags_color:string="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2";
     return(
         <>
+
         <div className="h-screen">
 
             <NavBar/>

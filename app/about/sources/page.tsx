@@ -1,4 +1,4 @@
-import NavBar from '../NavBar'
+import NavBar from '../../NavBar'
 import CustomLink from './customLink'
 export default function Sources(){
     const responsive="https://tailwindcss.com/docs/responsive-design";
