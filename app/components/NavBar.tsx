@@ -1,12 +1,9 @@
 'use client'
 import Link from "next/link"
-import { useContext, useState } from "react"
-import {UseTheme} from './darkModeContext'
+import { useState } from "react"
 
 export default function NavBar(){
     const [menuVal,menuSet] = useState(false);
-    //    const darkState =useTheme();
-    const darkState=true;
     const navItems=(display:string)=>{
         //I am not sure if this is optimal, will leave it this way as of now.
         return(
@@ -34,7 +31,7 @@ export default function NavBar(){
                 className="flex items-center flex-shrink-0 text-white mr-6 font-semibold text-xl">
                 <Link
                     href="/">
-                    Homepage{"hi"+darkState}
+                    Homepage
                 </Link>   
             </div>
 
@@ -42,20 +39,6 @@ export default function NavBar(){
                 className="invisible h-0 lg:visible lg:h-auto">{navItems("")}
             </div>
     
-            <div className="inline-flex gap-2">
-            <UseTheme/>
-{/*
-            <button 
-                className=""
-                onClick={()=>{///darkSet(!darkMode)}}>
-               console.log("hello") }}>
-                        hi
-            </button>*/
-            ///replaced the button with a Theme Changer Component
-            ///in order to be able to use "DarkContext.Provider"
-            }
-
-                
                 <div 
                     className="block lg:hidden">
                     
@@ -66,9 +49,10 @@ export default function NavBar(){
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div className="w-full">
-              {menuVal&&navItems("lg:h-0 lg:hidden")}
+
+            <div 
+                className="w-full">
+                {menuVal&&navItems("lg:h-0 lg:hidden")}
             </div>
         </nav>
         </>

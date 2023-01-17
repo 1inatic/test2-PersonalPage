@@ -1,5 +1,5 @@
-import NavBar from '../../NavBar'
-import CustomLink from './customLink'
+import NavBar from '../../components/NavBar'
+import CustomLink from '../../components/customLink'
 export default function Sources(){
     const responsive="https://tailwindcss.com/docs/responsive-design";
     const nextjs="https://beta.nextjs.org/docs/routing/fundamentals";
