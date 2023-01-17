@@ -1,13 +1,15 @@
 import NavBar from '../../components/NavBar'
-import CustomLink from '../../components/customLink'
+
+
 export default function Sources(){
-    const responsive="https://tailwindcss.com/docs/responsive-design";
-    const nextjs="https://beta.nextjs.org/docs/routing/fundamentals";
-    const reactReview="https://reactjs.org/docs/hooks-state.html";
-    const svgFun="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths";
-    const tailWind="https://tailwindcss.com/docs/background-color";
-    const types ="https://bobbyhadz.com/blog/react-parameter-props-implicitly-has-an-any-type"
-    const navBar="https://v1.tailwindcss.com/components/navigation";
+        const responsive="https://tailwindcss.com/docs/responsive-design";
+        const nextjs="https://beta.nextjs.org/docs/routing/fundamentals";
+        const reactReview="https://reactjs.org/docs/hooks-state.html";
+        const svgFun="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths";
+        const tailWind="https://tailwindcss.com/docs/background-color";
+        const types ="https://bobbyhadz.com/blog/react-parameter-props-implicitly-has-an-any-type"
+        const navBar="https://v1.tailwindcss.com/components/navigation";
+
     return(
         <>
         <NavBar/>
@@ -59,6 +61,23 @@ export default function Sources(){
 
         </div>
         </>
+    )
+}
+
+
+interface LinkProps {
+    name: string;
+    url: string;
+}
+
+function CustomLink(props:LinkProps){
+    return(
+        <a href={props.url} >
+            <li
+                className="text-blue-600 font-medium hover:underline my-1 hover:bg-black hover:bg-opacity-5 rounded p-1"            >
+                {props.name}
+                    </li>
+        </a>
     )
 }
 
