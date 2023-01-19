@@ -2,6 +2,7 @@ import NavBar from '../components/NavBar'
 import Image from 'next/image'
 
 
+
 export default function GalleryPage(){
     const darkMode=false; //manual switch -- for this project we won't use client-side rendering -> no React Hooks
     return(
@@ -11,8 +12,6 @@ export default function GalleryPage(){
         className={(darkMode?" dark":"")+' h-screen '}> {/*this one adds a dark class if darkMode==true */}
         <div
         className=" dark:bg-gray-900">
-
-            <NavBar/>
 
             <div 
                 className="mt-5 grid-rows-3 grid-cols-3 grid justify-between gap-5 mx-2">
