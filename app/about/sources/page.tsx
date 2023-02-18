@@ -12,7 +12,6 @@ export default function Sources(){
 
     return(
         <>
-        <NavBar/>
         <div className="h-screen">
 
             <div className="flex justify-center ">   
