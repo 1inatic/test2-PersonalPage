@@ -16,8 +16,11 @@
       
   + ### a navigation bar,
  	perhaps I was a bit influeced by the React color palette..
-      
-      ### Other ideas
+ 	
+ 	
+ 	
+	
+  ### Other ideas
 - [ ] I was planning on creating a "Donate" button, which would be a way for users of the webpage to donate to me.  
 Moreover, I want to make it so that the user donates using a blockchain, specifically 'Algorand'.   
 Currently I am just before the knoweledge gathering stage :p, as I am epxloring other JS libraries.
